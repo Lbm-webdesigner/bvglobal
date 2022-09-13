@@ -1,0 +1,26 @@
+.nav_bar_custome .nav-link {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1 , h2 , h3 {
+    font-family: 'Abel', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Manrope:wght@200;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+.nav_bar_custome li {
+    padding: 5px 15px;
+    align-self: center;
+}
+.btn-contact {
+    background-color: #033e67;
+    color: #fff !important;
+    padding: 15px 28px;
+    width: 150px;
+}
