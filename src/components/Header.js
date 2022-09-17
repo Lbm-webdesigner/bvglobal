@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../images/logo.png';
-import Main from './header.css'
+import Main from './header.css';
+
 
 import App from "../App";
 
