@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from './Home';
 import About from './Aboutus';
 import Import from './Import';
@@ -28,6 +29,7 @@ function App() {
         <Route path="Quality" element={<Quality />} />
         <Route path="contact" element={<Contact />} />
      </Routes>
+     <Footer/>
     </div>
   );
 }
