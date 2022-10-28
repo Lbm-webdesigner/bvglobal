@@ -567,14 +567,14 @@ ul.why_choose_us {
 .bvglobal_icon-block.icon-block-7.text-center {
     max-width: 100%;
 }
-.bvglobal_icon-block.icon-block-7 {
+.bvaglobl_icon-block.icon-block-7 {
     box-shadow: none;
     border: 0;
     text-align: left;
     padding: 30px 20px;
     background-color: #fff;
 }
-.sigma_icon-block.icon-block-7 {
+.bvaglobl_icon-block.icon-block-7 {
     box-shadow: none;
     border: 0;
     text-align: left;
@@ -582,7 +582,7 @@ ul.why_choose_us {
     background-color: #fff;
     max-width: 300px;
 }
-.sigma_icon-block.icon-block-7 .icon-wrapper span {
+.bvaglobl_icon-block.icon-block-7 .icon-wrapper span {
     font-size: 80px;
     font-weight: 800;
     z-index: 1;
@@ -591,7 +591,7 @@ ul.why_choose_us {
     margin-bottom: 10px;
     display: inline-block;
 }
-.sigma_icon-block.icon-block-7 .icon-wrapper span::before {
+.bvaglobl_icon-block.icon-block-7 .icon-wrapper span::before {
     content: '';
     position: absolute;
     top: 0;
@@ -603,16 +603,155 @@ ul.why_choose_us {
     border-radius: 50%;
     z-index: -1;
 }
-.sigma_icon-block.icon-block-7 h5 {
+.bvaglobl_icon-block.icon-block-7 h5 {
     font-size: 22px;
     color: #222222;
 }
-.sigma_icon-block h5+p {
+.bvaglobl_icon-block h5+p {
     margin-top: 10px;
 }
-.sigma_icon-block.icon-block-7.text-center:hover {
+.bvaglobl_icon-block.icon-block-7.text-center:hover {
     box-shadow: 0px 10px 50px 0px rgb(53 82 99 / 9%);
     border-color: transparent;
+}
+.light-bg {
+    background-color: #f7f7f7;
+}
+.progress_bar .progress {
+    max-height: 5px;
+}
+.progress_bar .values_bar {
+    float: right;
+    margin-right: 10%;
+}
+.progress_bar label {
+    margin: 10px 0px;
+}
+.bvaglobl_icon-block.icon-block-7 {
+    box-shadow: none;
+    border: 0;
+    text-align: left;
+    padding: 30px 20px;
+    background-color: #fff;
+    max-width: 300px;
+}
+.pattern-building-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/building-2.png);
+}
+.bvaglobl_icon-block.icon-block-7 .icon-wrapper span {
+    font-size: 80px;
+    font-weight: 800;
+    z-index: 1;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
+    -webkit-text-stroke-color: #222222;
+}
+.stroke-text {
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: 400;
+}
+.bvaglobl_icon-block.icon-block-7:hover .stroke-text {
+    -webkit-text-stroke-color: #222222;
+}
+.bvaglobl_icon-block.icon-block-7 .icon-wrapper span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: #fd8704;
+    opacity: .4;
+    border-radius: 50%;
+    z-index: -1;
+}
+.bvaglobl_icon-block.icon-block-7 h5 {
+    font-size: 22px;
+}
+.bvaglobl_icon-block h5+p {
+    margin-top: 10px;
+}
+section.section-padding {
+    padding: 110px 0 80px;
+}
+section.contact_details {
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+}
+.contact_details .globel_box {
+    padding: 30px;
+    margin: 50px 0;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px 0px rgb(53 82 99 / 9%);
+}
+.globel_icon-block.icon-block-3 {
+    display: flex;
+    padding: 15px;
+    box-shadow: none;
+    padding: 0;
+}
+.globel_icon-block.icon-block-2 .globel_icon-block-content, .globel_icon-block.icon-block-3 .globel_icon-block-content {
+    flex: 1;
+}
+.globel_icon-block.icon-block-3 svg {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    background-color: #77bd0f;
+    color: #fff;
+    border: 4px solid #fff;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 9%);
+    margin-right: 6px;
+}
+section.contact_form {
+    padding: 80px 0px;
+}
+.section-title .subtitle span:last-child::after {
+    left: 6px;
+    position: absolute;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-group svg {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #e8e8e8;
+}
+.form-group .form-control {
+    height: 60px;
+    padding: 8px 15px;
+    border-radius: 0;
+    border: 1px solid #efefef;
+    border-radius: 0;
+    width: 100%;
+    color: #6e6e6e;
+    background-color: #fff;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+}
+.btn-success{
+    --bs-btn-bg: #77bd0f;
+    --bs-btn-border-color: #77bd0f;
 }
 
 /* https://react-icons.github.io/react-icons/icons?name=bs */

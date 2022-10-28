@@ -1,31 +1,38 @@
-import { Form } from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
 
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import AboutImg from './images/about4.jpg';
+import AboutImg5 from './images/about5.png';
 
-import { BsTwitter } from "react-icons/bs";
+import { BiCheckShield } from "react-icons/bi";
+import { FaBuffer } from "react-icons/fa";
 
-function Aboutus(){
+
+
+import ProgressBar from 'react-bootstrap/ProgressBar';
+
+function About(){
     return(
-        <div>
-        <div className="innerBanner dark-overlay">
-            <Container>
-            <div className="bvglobal_subheader-inner">
-                <div className="bvglobal_subheader-text">
-                <h1>About Us</h1>
+        <div className="wraper">
+             <div className="innerBanner dark-overlay">
+                <Container>
+                <div className="bvglobal_subheader-inner">
+                    <div className="bvglobal_subheader-text">
+                    <h1>About Us</h1>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><a className="btn-link" href="#">Home</a></li>
+                        <li className="breadcrumb-item active" aria-current="page">About Us</li>
+                    </ol>
+                    </nav>
                 </div>
-                <nav aria-label="breadcrumb">
-                <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a className="btn-link" href="#">Home</a></li>
-                    <li className="breadcrumb-item active" aria-current="page">About Us</li>
-                </ol>
-                </nav>
+                </Container>
             </div>
-            </Container>
-        </div>
-        <section className="section_">
+
+            <section className="section_">
             <Container>
                 <Row className="align-items-center">
                    <Col lg={6} className="mb-lg-30">
@@ -51,7 +58,7 @@ function Aboutus(){
                     <Col lg={6}>
                     <div className="bvglobal_icon-block icon-block-3 d-block">
                         <div className="icon-wrapper mb-4">
-                            <span>{BsTwitter}</span>
+                            <span><BiCheckShield/></span>
                         </div>
                         <div className="bvglobal_icon-block-content">
                         <h5> AIR FREIGHT </h5>
@@ -62,7 +69,7 @@ function Aboutus(){
                     <Col lg={6}>
                         <div className="bvglobal_icon-block icon-block-3 d-block">
                             <div className="icon-wrapper mb-4">
-                                <span>{BsTwitter}</span>
+                                <span><FaBuffer/></span>
                             </div>
                             <div className="bvglobal_icon-block-content">
                             <h5> SEA FREIGHT </h5>
@@ -87,77 +94,103 @@ function Aboutus(){
         </Container>
         </section>
 
-        <div className="section light-bg">
-            <div className="container">
-
-            <div className="row align-items-center">
-
-                <div className="col-lg-6">
-                <div className="bvglobal_dots-wrapper">
-                    {/* <img src="assets/img/about5.png" alt="about"> */}
-                    <div className="bvglobal_dots dots-2"></div>
-                </div>
-                </div>
-
-                <div className="col-lg-6">
-                <div className="mr-lg-30">
-                    <div className="section-title mb-0 text-left">
-                    <p className="subtitle"> <span></span> Our Strategy <span></span> </p>
-                    <h4 className="title">The Highest Quality Services 24 Hours.</h4>
+        <div className="section light-bg py-5">
+            <Container>
+             <Row className="align-items-center py-2">
+                 <Col lg="6">
+                    <div className="bvglobal_dots-wrapper">
+                        <div className="bvglobal_dots dots-2"></div>
+                        <img src={AboutImg5}/>
                     </div>
-
-                    <p>
-                    A good example of road cargo is food, as supermarkets require deliveries daily to replenish their shelves with goods. Retailers and manufacturers of all kinds rely upon delivery trucks, be they full size semi trucks or smaller delivery vans. These smaller road haulage companies constantly strive for the best routes and prices to ship out their products.
+                </Col>
+                <Col lg="6">
+                    <div className="mr-lg-30">
+                        <div className="section-title mb-0 text-left">
+                            <p className="subtitle"> <span></span> Our Strategy <span></span> </p>
+                            <h4 className="title">The Highest Quality Services 24 Hours.</h4>
+                         </div>
+                         <p>
+                            A good example of road cargo is food, as supermarkets require deliveries daily to replenish their shelves with goods. Retailers and manufacturers of all kinds rely upon delivery trucks, be they full size semi trucks or smaller delivery vans. These smaller road haulage companies constantly strive for the best routes and prices to ship out their products.
                     </p>
-
                     <div className="bvglobal_progress active">
-                    <h6>CARGO STORAGE</h6>
-                    <div className="progress">
-                        <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                        <span></span>
+                        <div className='progress_bar my-3'>
+                            <label>CARGO STORAGE</label><label className='values_bar'>71</label>
+                            <ProgressBar variant="warning" now={71} />
+                        </div>
+                        <div className='progress_bar my-3'>
+                            <label>WORLDWIDE</label>
+                            <label className='values_bar'>85</label>
+                            <ProgressBar variant="warning" now={85} />
+                        </div>
+                        <div className='progress_bar my-3'>
+                            <label>AIR CARGO</label><label className='values_bar'>55</label>
+                            <ProgressBar variant="warning" now={55} />
                         </div>
                     </div>
-                    <div className="bvglobal_progress-count" style="left: 70%;">
-                        <span>70%</span>
                     </div>
-                    </div>
-
-                    <div className="bvglobal_progress active">
-                    <h6>WORLDWIDE</h6>
-                    <div className="progress">
-                        <div className="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                        <span></span>
-                        </div>
-                    </div>
-                    <div className="bvglobal_progress-count" style="left: 85%;">
-                        <span>85%</span>
-                    </div>
-                    </div>
-
-                    <div className="bvglobal_progress active">
-                    <h6>AIR CARGO</h6>
-                    <div className="progress">
-                        <div className="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-                        <span></span>
-                        </div>
-                    </div>
-                    <div className="bvglobal_progress-count" style="left: 55%;">
-                        <span>55%</span>
-                    </div>
-                    </div>
-
-                </div>
-                </div>
-
-            </div>
-
-            </div>
+                </Col>
+             </Row>
+            </Container>
         </div>
-    </div>
-
-
         
+        <section className='section-padding pattern-building-3 position-relative'>
+            <Container>
+                <div className="section-title text-center">
+                    <h6 className="subtitle"> <span></span> Working Process <span></span> </h6>
+                    <h4 className="title">Inspired Features</h4>
+                </div>
+                <Row>
+                    <Col lg={3}>
+                    <div className="bvaglobl_icon-block text-center icon-block-7">
+                        <div className="icon-wrapper">
+                        <span className="stroke-text stroke-text-dark">01</span>
+                        </div>
+                        <div className="bvaglobl_icon-block-content">
+                        <h5> Cargo Storage </h5>
+                        <p>A cargo ship or freighter is a merchant ship that carries cargo.</p>
+                        </div>
+                    </div>
+                    </Col>
+                    <Col lg={3}>
+                    <div class="bvaglobl_icon-block text-center icon-block-7">
+                        <div class="icon-wrapper">
+                        <span class="stroke-text stroke-text-dark">02</span>
+                        </div>
+                        <div class="bvaglobl_icon-block-content">
+                        <h5> Ground </h5>
+                        <p>A cargo ship or freighter is a merchant ship that carries cargo.</p>
+                        </div>
+                    </div>
+                    </Col>
+                    <Col lg={3}>
+                    <div class="bvaglobl_icon-block text-center icon-block-7">
+                        <div class="icon-wrapper">
+                        <span class="stroke-text stroke-text-dark">03</span>
+                        </div>
+                        <div class="bvaglobl_icon-block-content">
+                        <h5> Worldwide </h5>
+                        <p>A cargo ship or freighter is a merchant ship that carries cargo.</p>
+                        </div>
+                    </div>
+                    </Col>
+                    <Col lg={3}>
+                        <div class="bvaglobl_icon-block text-center icon-block-7">
+                            <div class="icon-wrapper">
+                            <span class="stroke-text stroke-text-dark">04</span>
+                            </div>
+                            <div class="bvaglobl_icon-block-content">
+                            <h5> Air Cargo </h5>
+                            <p>A cargo ship or freighter is a merchant ship that carries cargo.</p>
+                            </div>
+                        </div> 
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+        
+
+    </div>
     )
 }
 
-export default Aboutus;
+export default About;

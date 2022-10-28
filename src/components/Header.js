@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../images/logo.png';
 import Main from './header.css';
 
-
 import App from "../App";
 
 const Header = () =>{
@@ -37,7 +36,7 @@ const Header = () =>{
                 <Link className="nav-link" to="/Quality">Quality</Link> 
             </li>
             <li className="nav-item">
-                <Link className="nav-link btn-contact" to="/Contactus">Contact</Link> 
+                <Link className="nav-link btn-contact" to="/Contact">Contact</Link> 
             </li>
             </ul>
         </div>

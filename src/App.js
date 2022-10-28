@@ -8,7 +8,7 @@ import Import from './Import';
 import Export from './Export';
 import Certificate from './Certificate';
 import Quality from './Quality';
-import Contact from './Contactus';
+import Contact from './Contact';
 
 import {
   Routes,

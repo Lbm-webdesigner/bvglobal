@@ -10,7 +10,7 @@ h1 , h2 , h3 {
     font-size: 18px;
     color: #000;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
 .nav_bar_custome .nav-link:hover {
